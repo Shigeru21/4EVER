@@ -1,0 +1,31 @@
+.section3 {
+  position: relative;
+  background-color: rgb(239, 239, 221);
+  height: max-content;
+
+  &__banner {
+    width: 60%;
+
+  }
+      &-text{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 36px;
+        top: 60px;
+        color: navy;
+        font-weight: 700;
+    }
+    &-btn {
+      position:relative;
+      left:50%;
+      bottom: 70px;
+      text-align: center;
+      transform: translateX(-50%);
+
+      @include res-xs {
+        top: 2rem;
+      }
+      & img {
+          width: 85%;
+      }
+    }
+    }

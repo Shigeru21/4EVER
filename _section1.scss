@@ -1,0 +1,123 @@
+.section1 {
+    &-top {
+        height: 120vh;
+        background: url('./Assets/bg_banner.jpg') no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+    
+  
+        @include res-xs {
+          height: 400px;
+        }
+        @include res-xxs {
+          height: 340px;
+        }
+        @include res-2xs {
+          height: 230px;
+        }
+        @include res-3xs {
+          height: 230px;
+        }
+    
+        @include res-sm {
+          height: 460px;
+        }
+    
+        @include res-md {
+          height: 550px;
+        }
+    
+        @include res-sm-landscape {
+          height: 430px;
+        }
+    
+        @include res-md-landscape {
+          height: 500px;
+        }
+    
+        @include res-lg-portrait {
+          height: 650px;
+        }
+    
+        @include res-xl-special {
+          height: 700px;
+        }
+      &__logo {
+        position: absolute;
+        top: 12%;
+        text-align: center;
+        width: 80%;
+  
+        & > img {
+          width: 11.3%;
+  
+          @include res-md {
+            width: 15%;
+          }
+          @include res-sm {
+            width: 15%;
+          }
+          @include res-xs {
+            width: 15%;
+          }
+        }
+      }
+    &-text{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      position:relative;
+      font-size: 46px;
+      top:150px;
+      color: navy;
+      font-weight: 700;
+      animation: scale 3s infinite forwards cubic-bezier(0.5, 1, 0.89, 1);
+    }
+    &-flex-container{
+      padding: 45px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      text-align: center;
+      margin-top: 110px;
+      align-items: stretch;
+      align-content: stretch;
+      animation: showImage 0.5s linear forwards
+    }
+    &-down{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        margin-top:50px;
+        color: navy;
+        font-weight: 700;
+    }
+    &-button {
+        position:relative;
+        margin-top: 5px;
+        text-align: center;
+
+        @include res-xs {
+          top: 2rem;
+        }
+  
+        & img {
+          width: 40px;
+          position: relative;
+      }
+      
+      & img:first-child,
+      & img:last-child {
+        @include animationBtnScroll(1s);
+      }
+      &-child {
+        @include res-xs {
+          width: 70%;
+        }
+      }
+    }
+    &-elsa{
+        margin-top: 30px;
+    }
+    &-cinderella{
+        margin-top: 30px;
+    }
+  }
+}
+  

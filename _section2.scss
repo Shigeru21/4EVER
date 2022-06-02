@@ -1,0 +1,75 @@
+.section2 {
+    background-color: #FFCCCC;
+    padding-block: 4.5%;
+
+      @include res-xs {
+        padding-block: 10%;
+      }
+
+    &__video {
+      @extend .section2__video;
+      background-image: url('./Assets/frame_video_big.png');
+      margin: 4% auto 2%;
+  
+      @include res-xs {
+        margin: 10% auto 8%;
+      }
+  
+      & video {
+        aspect-ratio: 16/9;
+      }
+  
+  
+    &__slider {
+      max-width: 70%;
+      margin: 0 auto;
+  
+      @include res-sm {
+        max-width: 90%;
+      }
+      @include res-xs {
+        max-width: 90%;
+      }
+    }
+    &__slider {
+      max-width: 70%;
+      margin: 0 auto;
+  
+      @include res-sm {
+        max-width: 90%;
+      }
+      @include res-xs {
+        max-width: 90%;
+      }
+    }
+  
+    &__item {
+      cursor: pointer;
+      &img{
+        background-image: url("./Assets/frame_video_sm.png");
+        margin: 4% auto 2%;
+        margin: 0 auto;
+        padding: 2.8% 2% 2.15% 2%;
+        background-size: 100% 98%;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+      }
+    }
+  
+    &__title {
+      color: $color-white;
+      font-weight: normal;
+      text-align: center;
+      @include lineLimit(2);
+  
+      @include res-xs {
+        font-size: 12px;
+      }
+    }
+}
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: transparent !important;
+}

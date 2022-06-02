@@ -1,0 +1,33 @@
+.section5 {
+  background:url("./Assets/bg_exclusively.png");
+  padding-block: 4.5%;
+  height: 150px;
+
+@media (max-width: 576px) {
+  .section5 {
+    padding-block: 10%;
+  }
+}
+
+      // LOGO
+      &-logo {
+        position:relative;
+        left:50%;
+        text-align: center;
+        transform: translateX(-50%);
+
+        @include res-xs {
+          top: 1rem;
+        }
+        & img {
+            width: 20%;
+        }
+      }
+    &-text{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        margin-top:50px;
+        color: navy;
+        font-weight: 700;
+    }
+}

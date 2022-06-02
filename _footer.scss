@@ -1,0 +1,39 @@
+.footer {
+  position: relative;
+  background-color:rgb(240, 115, 181);
+
+  &-bottom {
+    &_logo {
+    margin-top: 23px;
+   margin-bottom: 20px;
+      text-align: center;
+    }
+    
+    @include res-xs {
+      top: 1rem;
+    }
+    & img {
+        width: 60px;
+    }
+
+    & p {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.3;
+      margin: 0;
+    }
+
+    &_company {
+      padding-top: 23px;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+    
+    @include res-xs {
+      top: 1rem;
+    }
+    & img {
+        width: 100px;
+    }
+  }
+}

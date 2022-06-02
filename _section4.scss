@@ -1,0 +1,145 @@
+.section4 {
+  background-color: rgb(244, 219, 244);
+  padding-block: 4.5%;
+  height: max-content;
+
+@media (max-width: 576px) {
+  .section4 {
+    padding-block: 10%;
+  }
+}
+
+&_top-text{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 36px;
+  position: relative;
+  top: 15%;
+  color: navy;
+  font-weight: 700;
+}
+}
+.cot1{
+  position: relative;
+  width:98%;
+  right: 5%;
+  margin-top: 10px;
+}
+.text--first {
+  text-align: center;
+	font-size: 36px;
+  color: navy;
+  margin-right: 200px;
+  text-align: center;
+	margin-top: 30px;
+}
+.text--middle {
+  text-align: center;
+	font-size: 36px;
+  text-align: center;
+}
+.text--last {
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+	font-size: 29px;
+	margin-top: 15px;
+  color: navy;
+}
+.items--image{
+  width:100%;
+  text-align: center;
+  margin-top: 15px;
+  margin-right: 150px;
+  border-color: #fff;
+  border-width: 5px;
+  border-style: solid;
+}
+.carousel-item{
+	min-height: 100vh;
+  top: 15px;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+.carousel-item:before{
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.carousel-item.active h1{
+	animation: fadeInLeft 0.5s ease forwards;
+}
+.carousel-item.active h2{
+	animation: fadeInLeft 0.5s ease forwards;
+}
+.carousel-item.active p{
+	animation: fadeInRight 0.5s ease forwards;
+}
+
+.carousel-controls{
+	position: absolute;
+	left: 50%;
+	bottom: 5px;
+	z-index: 10;
+	transform: translateX(-50%);
+}
+
+.carousel-indicators{
+	position: relative;
+	margin:0;
+}
+
+.carousel-indicators li{
+	height: 75px;
+	width: 75px;
+	margin:0 5px;
+  background-color: rgb(244, 219, 244);;
+  z-index: 3;
+	background-position: center;
+  background-size: cover;
+	transition: all 0.3s ease;
+}
+.carousel-indicators li.active{
+	transform: scale(1.2);
+}
+
+.carousel-control-next, 
+.carousel-control-prev{
+	height: 40px;
+	width: 40px;
+	opacity: 1;
+	z-index: 3;
+	top: 60%;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	transition: all 0.3s ease;
+}
+.carousel-control-next:hover, 
+.carousel-control-prev:hover{
+   box-shadow: 0 0 10px rgb(253, 27, 185);
+}
+.carousel-control-next img, 
+.carousel-control-prev img{
+   width: 40px;
+}
+.carousel-control-next{
+	right: -60px;
+}
+.carousel-control-prev{
+	left: -60px;
+}
+@media(max-width: 767px){
+  .carousel-control-next, 
+  .carousel-control-prev{
+  	display: none;
+  }
+  .carousel-indicators li{
+  	height: 75px;
+  	width: 75px;
+  }
+}
