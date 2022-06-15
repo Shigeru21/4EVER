@@ -9,101 +9,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-153539714-37"></script>
-    <style>
-        .loading {
-            box-shadow: none;
-            overflow: hidden
-        }
-        
-        .loader {
-            position: fixed;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            opacity: 1;
-            background: url("./Assets/bg_banner.jpg") no-repeat center;
-            background-size: 100% 108%;
-            z-index: 99999;
-            transition: .3s ease
-        }
-        
-        .loader.hiding {
-            opacity: 0
-        }
-        
-        .loader-1>div {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%)
-        }
-        
-        .myWave {
-            background: #da84b3;
-            width: 400px;
-            height: 600px;
-            position: absolute;
-            left: 50%;
-            top: calc(50% + 150px);
-            transform: translate(-50%, -20%);
-            animation: increase 1s ease;
-            animation-fill-mode: forwards
-        }
-        
-        .myWave:after {
-            content: "";
-            width: 300px;
-            height: 300px;
-            background: #fff;
-            position: absolute;
-            left: 50%;
-            top: 0;
-            transform: translate(-50%, -60%);
-            border-radius: 40%;
-            animation: wave 4s linear infinite
-        }
-        
-        .myWave::before {
-            content: "";
-            position: absolute;
-            left: 50%;
-            top: 0;
-            color: #da84b3;
-            z-index: 99;
-            transform: translate(-50%, 30px)
-        }
-        
-        @media screen and (max-width:992px) {
-            .loader-1 {
-                transform: scale(.75)
-            }
-        }
-        
-        @media screen and (max-width:768px) {
-            .loader-1 {
-                transform: scale(.5)
-            }
-        }
-        
-        @keyframes increase {
-            0% {
-                transform: translate(-50%, -20%)
-            }
-            100% {
-                transform: translate(-50%, -65%)
-            }
-        }
-        
-        @keyframes wave {
-            100% {
-                transform: translate(-50%, -60%) rotate(360deg)
-            }
-        }
-    </style>
     <meta name="title" content="index">
     <meta name="description" content="Disney ily 4EVER is an 18-inch doll brand inspired by beloved Disney stories and characters.​">
     <meta name="og:type" content="Website">
@@ -134,7 +39,7 @@
     <title>Disney ILY 4EVER Forever Dolls</title>
 </head>
 
-<body class="loading" style>
+<body class="loading">
     <div class="loader">
         <div class="loader-1">
             <svg width="306" height="318" viewBox="0 0 306 318" fill="none" version="1.1" id="svg59" sodipodi:docname="heart1-1.svg" inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
