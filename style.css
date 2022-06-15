@@ -10931,6 +10931,16 @@ h1 {
     overflow: hidden
 }
 
+.sparkle {
+    background-image: url(./Assets/item-star-2.png);
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    position: absolute;
+    z-index: 3;
+    animation: sparkle 1.5s steps(10) infinite
+}
+
 .discover h1,
 .discover .h1 {
     padding: 23px 0 26px;
